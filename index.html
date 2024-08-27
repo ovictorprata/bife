@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p>PARABÉNS BIFFETYYYY</p>
+      <section class="gallery">
+        <div class="gallery-item">
+          <img
+            src="https://media.tenor.com/7_CgY1OmC5AAAAAM/meat-beef.gif"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://i.pinimg.com/originals/fa/e3/a0/fae3a0918c9f046b0de5c4ee9b6406d5.gif"
+            alt="Imagem 2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://media.tenor.com/7_CgY1OmC5AAAAAM/meat-beef.gif"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://media.tenor.com/7_CgY1OmC5AAAAAM/meat-beef.gif"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://i.pinimg.com/originals/fa/e3/a0/fae3a0918c9f046b0de5c4ee9b6406d5.gif"
+            alt="Imagem 2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92iv2i1R24xPdzyXbcCLe2jnvs96jm2rmRg&s"
+            alt="Imagem 3"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://media.tenor.com/TWowDe4yzm8AAAAM/man-looking.gif"
+            alt="Imagem 4"
+          />
+        </div>
+        <button>Clique aqui</button>
+        <div class="gallery-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0S1v7F0RaDyiF8pXbv6ROinQGTqEcQOVcOA&s"
+            alt="Imagem 5"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://media.tenor.com/AW1JAYMAXOIAAAAd/bolsonaro-cocaina.gif"
+            alt="Imagem 6"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://media.tenor.com/zYt2mrjZOHgAAAAM/gabrieltuoto-zara.gif"
+            alt="Imagem 7"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://media2.giphy.com/media/1npaSqEUpFvZ5H9dqK/200w.gif?cid=6c09b9522eaft3f881s2010jx8xp5qf4wwxgbsbqr063za65&ep=v1_gifs_search&rid=200w.gif&ct=g"
+            alt="Imagem 8"
+          />
+        </div>
+      </section>
+    </main>
+
+    <script>
+      document.querySelector("button").addEventListener("click", () => {
+        const imgs = document.querySelectorAll("img");
+        console.log("cli");
+        imgs.forEach((img) => {
+          img.style.visibility = "visible";
+        });
+
+        document.querySelector("p").style.visibility = "visible";
+        document.querySelector("button").innerText = "🎉🎉🎉🎉🎉";
+      });
+    </script>
+  </body>
+</html>
