@@ -16,7 +16,7 @@ body {
     #4b0082,
     #8a2be2
   );
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 body {
@@ -93,7 +93,6 @@ button {
     #4b0082,
     #8a2be2
   );
-  font-family: "Comic Sans MS", cursive, sans-serif;
   color: white;
   font-weight: 900;
   text-shadow: 2px 2px 0px black;
