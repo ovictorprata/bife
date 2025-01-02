@@ -8,6 +8,7 @@
   </head>
   <body>
     <h1>PARABENS MATHEUS</h1>
+    <button>Clique aqui</button>
     <div class="gallery">
       <img src="https://i.giphy.com/BPe1fWG9uDoQ0.webp" alt="Imagem 1" />
       <img
@@ -40,6 +41,9 @@
     <audio id="audio" src="./parabens.mp3"></audio>
 
     <script>
+      document.querySelector("button").addEventListener("click", () => {
+        document.querySelector("audio").play();
+      });
       document.querySelector("audio").play();
     </script>
   </body>

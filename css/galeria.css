@@ -57,10 +57,15 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-h1 {
+h1,
+button {
   font-family: "Comic Sans MS", cursive, sans-serif; /* Fonte Comic Sans */
   color: white; /* Cor do texto branca */
   text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black,
     1px 1px 0px black; /* Contorno preto nas letras */
   padding: 10px; /* Espaçamento interno (opcional) */
+}
+
+button {
+  margin-bottom: 20px;
 }
