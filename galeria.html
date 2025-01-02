@@ -46,7 +46,10 @@
       const audio = document.getElementById("parabensAudio");
       const playButton = document.getElementById("playAudioButton");
 
-      // Detecta dispositivos iOS e mostra o botão
+      // Força o pré-carregamento do áudio
+      audio.load();
+
+      // Detecta dispositivos iOS e exibe o botão, se necessário
       if (
         /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
         !audio.canPlayType("audio/mpeg")
@@ -54,17 +57,17 @@
         playButton.style.display = "block";
       }
 
-      // Adiciona evento para reprodução automática ao clique
+      // Toca o áudio ao clicar na tela
       window.addEventListener("click", function () {
         audio.play().catch(() => {
-          playButton.style.display = "block";
+          playButton.style.display = "block"; // Exibe o botão se o autoplay falhar
         });
       });
 
       // Evento para tocar o áudio via botão
       playButton.addEventListener("click", function () {
         audio.play();
-        playButton.style.display = "none";
+        playButton.style.display = "none"; // Esconde o botão após tocar
       });
     </script>
   </body>
