@@ -37,38 +37,10 @@
       />
     </div>
 
-    <audio id="parabensAudio" loop>
-      <source src="./parabens.mp3" type="audio/mpeg" />
-      Seu navegador não suporta o elemento de áudio.
-    </audio>
+    <audio id="audio" src="./parabens.mp3"></audio>
 
     <script>
-      const audio = document.getElementById("parabensAudio");
-      const playButton = document.getElementById("playAudioButton");
-
-      // Força o pré-carregamento do áudio
-      audio.load();
-
-      // Detecta dispositivos iOS e exibe o botão, se necessário
-      if (
-        /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
-        !audio.canPlayType("audio/mpeg")
-      ) {
-        playButton.style.display = "block";
-      }
-
-      // Toca o áudio ao clicar na tela
-      window.addEventListener("click", function () {
-        audio.play().catch(() => {
-          playButton.style.display = "block"; // Exibe o botão se o autoplay falhar
-        });
-      });
-
-      // Evento para tocar o áudio via botão
-      playButton.addEventListener("click", function () {
-        audio.play();
-        playButton.style.display = "none"; // Esconde o botão após tocar
-      });
+      document.querySelector("audio").play();
     </script>
   </body>
 </html>
