@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/galeria.css" />
   </head>
   <body>
-    <h1>PARABEEEEEEEEEEEEEEEEEEEEENS MATHEEUSSSSSSSS</h1>
+    <h1>PARABENS MATHEUS</h1>
     <div class="gallery">
       <img src="https://i.giphy.com/BPe1fWG9uDoQ0.webp" alt="Imagem 1" />
       <img
@@ -43,10 +43,28 @@
     </audio>
 
     <script>
-      // Reproduz o áudio ao clicar em qualquer lugar da página
+      const audio = document.getElementById("parabensAudio");
+      const playButton = document.getElementById("playAudioButton");
+
+      // Detecta dispositivos iOS e mostra o botão
+      if (
+        /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+        !audio.canPlayType("audio/mpeg")
+      ) {
+        playButton.style.display = "block";
+      }
+
+      // Adiciona evento para reprodução automática ao clique
       window.addEventListener("click", function () {
-        const audio = document.getElementById("parabensAudio");
+        audio.play().catch(() => {
+          playButton.style.display = "block";
+        });
+      });
+
+      // Evento para tocar o áudio via botão
+      playButton.addEventListener("click", function () {
         audio.play();
+        playButton.style.display = "none";
       });
     </script>
   </body>
