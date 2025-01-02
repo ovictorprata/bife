@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria Responsiva</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+          to bottom,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+        min-height: 100vh;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        width: 90%;
+        max-width: 1000px;
+      }
+
+      @media (max-width: 600px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-family: "Comic Sans MS", cursive, sans-serif; /* Fonte Comic Sans */
+        color: white; /* Cor do texto branca */
+        text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black,
+          1px 1px 0px black; /* Contorno preto nas letras */
+        padding: 10px; /* Espaçamento interno (opcional) */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PARABEEEEEEEEEEEEEEEEEEEEENS MATHEEUSSSSSSSS</h1>
+    <div class="gallery">
+      <img src="https://i.giphy.com/BPe1fWG9uDoQ0.webp" alt="Imagem 1" />
+      <img
+        src="https://media.tenor.com/ZBD_Azh5Ik4AAAAM/subway-resturants-sandwitch.gif"
+        alt="Imagem 2"
+      />
+      <img
+        src="https://gifdb.com/images/high/beefy-burger-with-shining-effects-abk2kagm5twi09z5.gif"
+        alt="Imagem 3"
+      />
+      <img
+        src="https://img.wattpad.com/088325338576d223292846a8779ffd0dcef7d321/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6c372d4875587362794b47534f513d3d2d313231363037343632342e313665386334346536613830326335613933383234323537313136302e676966"
+        alt="Imagem 4"
+      />
+      <img
+        src="https://i.gifer.com/origin/ea/ea0426371a1d32e7081deb880aeaa4c2_w200.gif"
+        alt="Imagem 5"
+      />
+      <img src="../padre_filtros.gif" alt="Imagem 6" />
+      <img
+        src="https://d16ulvhu93kpvn.cloudfront.net/1600x0/uploads/site/2789/image/2021/07/23/image_20210723103407_88747.jpg"
+        alt="Imagem 7"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2IQ9l6q0wKNpnXoGXMqtCRrDgHnFZsbHc2g&s"
+        alt="Imagem 8"
+      />
+    </div>
+
+    <audio autoplay loop>
+      <source src="./parabens.mp3" type="audio/mpeg" />
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+  </body>
+</html>
